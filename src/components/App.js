@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import MultiLineText from './component/MultiLineText.js'
-import Dropdown from './component/Dropdown.js'
-import Tags from './component/Tags.js'
-import './App.css';
+import MultiLineText from './MultiLineText.js'
+import Dropdown from './Dropdown.js'
+import Tags from './Tags.js'
+import '../stylesheets/App.css';
 
 class App extends Component {
   constructor(props) {
