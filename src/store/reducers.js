@@ -3,7 +3,7 @@ import C from '../constants'
 export const names = (state = [], action={ type: null }) => {
     switch (action.type) {
         case C.UPDATE_NAMES:
-            return action.names
+            return action.names.filter(n => n.trim())
         default :
             return state
     }
