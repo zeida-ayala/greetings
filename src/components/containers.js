@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 import MultiLineText from './ui/MultiLineText'
 import Dropdown from './ui/Dropdown'
  import Tags from './ui/Tags'
-import {updateNames, changeLanguage} from '../actions'
+import {updateNames, changeGreeting} from '../actions'
 
 export const UpdateNames = connect(
     state =>
@@ -26,7 +26,7 @@ export const UpdateLanguage = connect(
     dispatch =>
         ({
             onSelect(event) {
-                dispatch(changeLanguage(event.target.value))
+                dispatch(changeGreeting(event.target.value))
             }
         })
 )(Dropdown)
