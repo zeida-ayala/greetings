@@ -7,7 +7,7 @@ class MultiLineText extends Component {
     const namesValue = names.join("\n")
     return ( 
       <textarea 
-        name = "text" 
+        name = "text-name" 
         className = "multiline-text"
         onChange = {event => onChange(event)} defaultValue = {namesValue} > 
       </textarea>
@@ -20,6 +20,7 @@ MultiLineText.propTypes = {
 }
 
 MultiLineText.defaultProps = {
+  names: [],
   onChange: f=>f
 }
 
